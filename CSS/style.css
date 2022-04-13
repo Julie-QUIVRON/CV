@@ -1,0 +1,539 @@
+
+/* Version mobile pour une largeur <= 600px */
+@media only screen and (max-width: 600px) {
+  .wrapper {
+    background-color: white;
+  }
+  
+  /* Partie de gauche de mon cv */
+  .header {
+    color: white;
+    /* placement de la photo en arrière plan */
+    background-image: url(../Images/photo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 2rem 1rem 1rem;
+    /* pour disposer mes blocs sur la photo */
+    display : flex;
+    flex-direction: column;
+  }
+  
+  .header__banner_title {
+    text-transform: uppercase;
+    line-height: 1.2rem;
+    text-align: center;
+    height: 3rem;
+  }
+  
+  /* bloc de nuage de mots */
+  .header__lastest-CV {
+    background-color: rgba(210, 210, 210, 0.2);
+    text-shadow: 0 0 0.25rem black;
+    line-height: initial;
+  }
+  
+  .header__lastest-CV__text1 {
+    font-size: 1rem;
+    text-align: right;
+    margin: auto;
+  }
+   
+  .header__lastest-CV__text2 {
+    font-size: 1rem;
+    text-align: left;
+    margin: auto;
+  }
+  
+    /* pour retirer les puces de listes de la nav */
+  .header__nav__links {
+    list-style: none;
+    text-align: right;
+    display: flex;
+    justify-content: space-around;
+    padding: inherit;
+    margin-top: 1rem;
+  }
+  
+  .header__nav__elt {
+    margin-left: 1rem;
+  }
+  
+  /* sourligner les liens et les mettre en blanc */
+  .header__nav__link {
+    color:white;
+    text-decoration: underline;
+  }
+
+  /* comportement au survol */
+  .header__nav__link:hover {
+    color:white;
+    text-shadow: 0 0 0.25rem white;
+  }
+  
+  /* Partie de droite de mon cv */
+  /* Pour rendre flex mes blocs */
+  
+  .main__title {
+    background-color: white;
+    text-align: center;
+    padding: 1rem 1.5rem;
+    margin-bottom: 0;
+    width:100%;
+  }
+  
+  /* pour encadrer mes blocs et les positionner */
+  .post {
+    border-top: 1px solid #EAEAEA;
+    border-right: 1px solid #EAEAEA;
+    padding: 1rem;
+  }
+  
+  /* pour définir le style général des boutons de catégorie */
+  .post__category {
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 0.7rem;
+    border-radius: 0.2rem;
+    padding: 0.3rem 0.4rem;
+    width: 3rem;
+  }
+  
+  /* pour personnaliser les différents boutons de catégorie */
+  .post__category--perso,
+  .post__category--solo-perso {
+    background-color: #DC5E53;
+  }
+    
+  .post__category--work {
+    background-color: #0766F0;
+  }
+  
+  .post__category--news {
+    background-color: #98DC62;
+  }
+  
+  .post__category--old {
+      background-color: #FA8304;
+  }
+  
+  .post__category--skill {
+      background-color: #F159FA;
+  }
+  
+  /* titres de mes blocs */
+  .post__title {
+    margin: 1rem 0;
+  }
+  
+  /* bloc images pour la page d'accueil */
+  /* bloc école/entreprise et date pour les autres pages */
+  .post__meta {
+    color: gray;
+    font-size: 0.8rem;
+  }
+  
+  /* taille des images */
+  .post__meta__icon {
+    max-width: 5rem;
+  }
+  
+  /* textes des blocs */
+  .post__summary {
+    margin-top: 1rem;
+    font-size: 0.8rem;
+  }
+  
+  /* liens internes */
+  .post__link {
+    font-weight: bold;
+    text-decoration: underline;
+  }
+
+  .post__link--return1 {
+    display: none;
+  }
+  
+  /* blocs lieux et dates des formations ou expériences pro*/
+  .post__meta__place {
+    font-style: normal;
+    font-weight: bold;
+    color: black;
+  }
+  
+  /* pour mes pages avec un seul bloc */
+  .post--solo {
+      width: 100%;
+  }
+  
+  }
+
+
+/* Version tablette pour une largeur > 601px */
+@media (min-width: 601px) {
+  .wrapper {
+    display: flex;
+    background-color: white;
+  }
+  
+  .header,
+  .main {
+  /*pour diviser la page en deux*/
+    width:50%;
+    height: 100vh;
+  }
+  
+  /* Partie de gauche de mon cv */
+  .header {
+    color: white;
+    /* placement de la photo en arrière plan */
+    background-image: url(../Images/photo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    /* pour espacer les 3 blocs entre eux */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* pour fixer l'image */
+    position: fixed;
+  
+    padding: 2rem 1rem 1rem;
+  }
+  
+  /* centre le bloc de mon titre */
+  .header__banner {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+  }
+  
+  .header__banner_title {
+    text-transform: uppercase;
+    line-height: 1.2rem;
+  }
+  
+  /* bloc de nuage de mots */
+  .header__lastest-CV {
+    background-color: rgba(210, 210, 210, 0.2);
+    text-align: right;
+    text-shadow: 0 0 0.25rem black;
+  }
+  
+    /* pour retirer les puces de listes de la nav */
+  .header__nav__links {
+    list-style: none;
+    text-align: right;
+  }
+  
+  .header__nav__elt {
+    display: inline;
+    margin-left: 1rem;
+  }
+  
+  /* sourligner les liens et les mettre en blanc */
+  .header__nav__link {
+    color:white;
+    text-decoration: underline;
+  }
+  /* comportement au survol */
+  .header__nav__link:hover {
+    color:white;
+    text-shadow: 0 0 0.25rem white;
+  }
+  
+  /* Partie de droite de mon cv */
+  /* Pour rendre flex mes blocs */
+  .main {
+    flex-wrap: wrap;
+    margin-left: 50%;
+  }
+  
+  .main__title {
+    background-color: white;
+    text-align: center;
+    padding: 1rem 1.5rem;
+    margin-bottom: 0;
+    width:100%;
+  }
+  
+  /* pour encadrer mes blocs et les positionner */
+  .post {
+    border-top: 1px solid #EAEAEA;
+    border-right: 1px solid #EAEAEA;
+    padding: 2rem;
+  }
+  
+  /* pour définir le style général des boutons de catégorie */
+  .post__category {
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 0.7rem;
+    border-radius: 0.2rem;
+    padding: 0.3rem 0.4rem;
+    width: 3rem;
+  }
+  
+  /* pour personnaliser les différents boutons de catégorie */
+  .post__category--perso,
+  .post__category--solo-perso {
+    background-color: #DC5E53;
+  }
+    
+  .post__category--work {
+    background-color: #0766F0;
+  }
+  
+  .post__category--news {
+    background-color: #98DC62;
+  }
+  
+  .post__category--old {
+      background-color: #FA8304;
+  }
+  
+  .post__category--skill {
+      background-color: #F159FA;
+  }
+  
+  /* titres de mes blocs */
+  .post__title {
+    margin: 1rem 0;
+  }
+  
+  /* bloc images pour la page d'accueil */
+  /* bloc école/entreprise et date pour les autres pages */
+  .post__meta {
+    color: gray;
+    font-size: 0.8rem;
+  }
+  
+  /* taille des images */
+  .post__meta__icon {
+    max-width: 5rem;
+  }
+  
+  /* textes des blocs */
+  .post__summary {
+    margin-top: 1rem;
+    font-size: 0.8rem;
+  }
+  
+  /* liens internes */
+  .post__link {
+    font-weight: bold;
+    text-decoration: underline;
+  }
+
+   /* Pour afficher le lien de retour en fin de page*/
+  .post__link--return1 {
+    display: none;
+  }
+  
+  /* blocs lieux et dates des formations ou expériences pro*/
+  .post__meta__place {
+    font-style: normal;
+    font-weight: bold;
+    color: black;
+  }
+  
+  /* pour mes pages avec un seul bloc */
+  .post--solo {
+      width: 100%;
+  }
+  
+  }
+
+
+  /* Version ordi pour une largeur > 801px */
+@media (min-width: 801px) {
+  .wrapper {
+    display: flex;
+    background-color: white;
+  }
+  
+  .header,
+  .main {
+  /*pour diviser la page en deux*/
+    width:50%;
+    height: 100vh;
+  }
+  
+  /* Partie de gauche de mon cv */
+  .header {
+    color: white;
+    /* placement de la photo en arrière plan */
+    background-image: url(../Images/photo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    /* pour espacer les 3 blocs entre eux */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* pour fixer l'image */
+    position: fixed;
+  
+    padding: 2rem 1rem 1rem;
+  }
+  
+  /* centre le bloc de mon titre */
+  .header__banner {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+  }
+  
+  .header__banner_title {
+    text-transform: uppercase;
+    line-height: 1.2rem;
+  }
+  
+  /* bloc de nuage de mots */
+  .header__lastest-CV {
+    background-color: rgba(210, 210, 210, 0.2);
+    text-shadow: 0 0 0.25rem black;
+  }
+  
+  .header__lastest-CV__text1 {
+    font-size: 1rem;
+    text-align: right;
+  }
+   
+  .header__lastest-CV__text2 {
+    font-size: 1rem;
+    text-align: left;
+  }
+  
+    /* pour retirer les puces de listes de la nav */
+  .header__nav__links {
+    list-style: none;
+    text-align: right;
+  }
+  
+  .header__nav__elt {
+    display: inline;
+    margin-left: 1rem;
+  }
+  
+  /* sourligner les liens et les mettre en blanc */
+  .header__nav__link {
+    color:white;
+    text-decoration: underline;
+  }
+  /* comportement au survol */
+  .header__nav__link:hover {
+    color:white;
+    text-shadow: 0 0 0.25rem white;
+  }
+  
+  /* Partie de droite de mon cv */
+  /* Pour rendre flex mes blocs */
+  .main {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 50%;
+  }
+  
+  .main__title {
+    background-color: white;
+    text-align: center;
+    padding: 1rem 1.5rem;
+    margin-bottom: 0;
+    width:100%;
+  }
+  
+  /* pour encadrer mes blocs et les positionner */
+  .post {
+    width: 50%;
+    border-top: 1px solid #EAEAEA;
+    border-right: 1px solid #EAEAEA;
+    padding: 2rem;
+  }
+  
+  /* pour définir le style général des boutons de catégorie */
+  .post__category {
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 0.7rem;
+    border-radius: 0.2rem;
+    padding: 0.3rem 0.4rem;
+    width: 3rem;
+  }
+  
+  /* pour personnaliser les différents boutons de catégorie */
+  .post__category--perso,
+  .post__category--solo-perso {
+    background-color: #DC5E53;
+  }
+    
+  .post__category--work {
+    background-color: #0766F0;
+  }
+  
+  .post__category--news {
+    background-color: #98DC62;
+  }
+  
+  .post__category--old {
+      background-color: #FA8304;
+  }
+  
+  .post__category--skill {
+      background-color: #F159FA;
+  }
+  
+  /* titres de mes blocs */
+  .post__title {
+    margin: 1rem 0;
+  }
+  
+  /* bloc images pour la page d'accueil */
+  /* bloc école/entreprise et date pour les autres pages */
+  .post__meta {
+    color: gray;
+    font-size: 0.8rem;
+  }
+  
+  /* taille des images */
+  .post__meta__icon {
+    max-width: 5rem;
+  }
+  
+  /* textes des blocs */
+  .post__summary {
+    margin-top: 1rem;
+    font-size: 0.8rem;
+  }
+  
+  /* liens internes */
+  .post__link {
+    font-weight: bold;
+    text-decoration: underline;
+  }
+
+  /* Pour afficher le lien de retour en fin de page*/
+  .post__link--return1 {
+    display:inline;
+  }
+
+  .post__link--return2 {
+    display: none;
+  }
+  
+  /* blocs lieux et dates des formations ou expériences pro*/
+  .post__meta__place {
+    font-style: normal;
+    font-weight: bold;
+    color: black;
+  }
+  
+  /* pour mes pages avec un seul bloc */
+  .post--solo {
+      width: 100%;
+  }
+  
+  }

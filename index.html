@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <!-- Titre du CV visible dans l'onglet -->
+    <title>CV Julie QUIVRON</title>
+    <!-- Image/icone visible dans l'onglet -->
+    <link rel="icon" type="photo.png" href="./Images/photo.png" />
+    <!-- fichiers CSS utilisés : reboot pour la normalisation du CSS et style pour personnaliser -->
+    <link rel="stylesheet" href="./CSS/reboot.css">
+    <link rel="stylesheet" href="./CSS/style.css">
+    <!-- pour rendre les pages responsives-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+    <div class="wrapper"> <!-- wrapper pour rendre flex mon CV -->
+        <!-- la partie de gauche de mon CV -->
+        <header class="header"> <!-- header et main pour diviser ma page en deux -->
+            <div role="banner" class="header__banner"> <!--mettre mon nom et prénom en avant -->
+                <h1 class="header__banner_title">Julie Quivron</h1>
+            </div>
+            <div class="header__lastest-CV"><!-- bloc de nuage de mots au centre de ma photo --> 
+                    <p class="header__lastest-CV__text1">Goût du travail en équipe</p>
+                    <p class="header__lastest-CV__text2">Esprit d'initiative et autonome</p>
+                    <p class="header__lastest-CV__text1">Dynamique et enthousiaste</p>
+                    <p class="header__lastest-CV__text2">Sens des responsabilités et des priorités</p>
+                    <p class="header__lastest-CV__text1">Méthodique et rigoureuse</p>
+                    <p class="header__lastest-CV__text2">RQTH</p>
+            </div>
+            <nav role="navigation" class="header__nav"> <!--bloc du menu du CV -->
+                <ul class="header__nav__links">
+                    <li class="header__nav__elt">
+                        <!-- Les liens ouvrent une nouvelle page -->
+                        <a href="https://www.linkedin.com/in/julie-quivron-a844283b/" target="_blank" class="header__nav__link">LinkedIn</a>
+                    </li>
+                    <li class="header__nav__elt">
+                        <a href="https://twitter.com/juliequivron69" target="_blank" class="header__nav__link">Twitter</a>
+                    </li>
+                    <li class="header__nav__elt">
+                        <a href="https://github.com/Julie-QUIVRON" target="_blank" class="header__nav__link">Github</a>
+                    </li>
+                    <li class="header__nav__elt">
+                        <a href="./contact.html" class="header__nav__link">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+
+
+        <!-- la partie droite de mon CV -->
+        <main class="main"> <!-- header et main pour diviser ma page en deux -->
+            <h2 class="main__title">Développeur web et web mobile</h2><!-- Titre de ma partie --> 
+            <article class="post"> <!-- class pour faire des blocs -->
+                <div class="post__category post__category--news">news</div> <!-- Les boutons de mes blocs -->
+                <h3 class="post__title">Formations et diplômes</h3> <!-- Titres de mes blocs -->
+                <div class="post__meta"> <!-- Bloc pour les images -->
+                    <img src="./Images/diplomes.jpg" alt="formations et diplomes" class="post__meta__icon">
+                </div>
+                <p class="post__summary">Eplucher mon parcours scolaire pour comprendre mon profil. Cela peut aider (ou pas) à me suivre.</p> <!-- Texte de mes blocs -->
+                <a href="./formations.html" class="post__link">En savoir plus</a> <!-- Liens pour aller sur des pages plus détaillées-->
+            </article>
+            <article class="post">
+                <div class="post__category post__category--work">Work</div>
+                <h3 class="post__title">Expériences professionnelles</h3>
+                <div class="post__meta">
+                    <img src="./Images/work.jpg" alt="Expériences professionnelles" class="post__meta__icon">
+                </div>
+                <p class="post__summary">Ancienne chargée de webmarketing passée du côté obscure de la force en tant que développeur web et web mobile !</p>
+                <a href="./experiences-professionnelles.html" class="post__link">En savoir plus</a>
+            </article>
+            <article class="post">
+                <div class="post__category post__category--work">Work</div>
+                <h3 class="post__title">Compétences</h3>
+                <div class="post__meta">
+                    <img src="./Images/competences.jpg" alt="compétences" class="post__meta__icon">
+                </div>
+                <p class="post__summary">Langages informatique, outils marketing et informatique, plateformes e-commerce, collaborations, etc. Je vous dit tout…</p>
+                <a href="./competences.html" class="post__link">En savoir plus</a>
+            </article>
+            <article class="post">
+                <div class="post__category post__category--perso">perso</div>
+                <h3 class="post__title">Mieux me connaître</h3>
+                <div class="post__meta">
+                    <img src="./Images/chat.jpg" alt="mieux me connaître" class="post__meta__icon">
+                </div>
+                <p class="post__summary">… et si cela ne suffit pas, je vous rédige un petit article sur moi, ma vie de famille, mes loisirs, mes petits plaisirs de la vie !</p>
+                <a href="./me-connaitre.html" class="post__link">En savoir plus</a>
+            </article>
+        </main>
+    </div>
+</body>
+
+</html>
